@@ -1,0 +1,18 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+background: #348F50; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #348F50 , #56B4D3); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #348F50 , #56B4D3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+}
+
+a {
+  color: #00B7FF;
+}
+
+.jumbotron {
+	background-color: black;
+	color: white;
+}

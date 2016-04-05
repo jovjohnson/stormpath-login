@@ -1,0 +1,24 @@
+html
+  head
+    title=title
+    link(href='//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css', rel='stylesheet')
+    link(href='/stylesheets/style.css', rel='stylesheet')
+  body
+    div.container
+      div.jumbotron
+        h1 hello!
+
+        if user
+          p welcome, #{user.fullName}
+          p
+            a.small(href="profile") edit my profile
+          form(action='/logout', method='POST')
+            button.btn.btn-default(type="submit") logout
+        else
+          p welcome to my app, ready to get started?
+          p
+            a.btn.btn-primary(href="/login") login now.
+          p
+            span.small don't have an account?
+            span &nbsp;
+            a.small(href="/register") register now.
